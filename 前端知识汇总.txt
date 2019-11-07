@@ -3,3 +3,6 @@
 eg. 'number' == typeof 1 , 判断1是不是数字
 3. bootstrap modal 中包含form，并且有多个按钮事件时，
 按钮事件的function中需要 return false; 来阻止form的自动提交；如果form有validate，也可以避免form的校验被触发
+4.html input不自动填充
+a). input 设置 autocomplete="off"
+b). form 级别设置 autocomplete="off"
