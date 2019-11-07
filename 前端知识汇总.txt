@@ -6,3 +6,8 @@ eg. 'number' == typeof 1 , 判断1是不是数字
 4.html input不自动填充
 a). input 设置 autocomplete="off"
 b). form 级别设置 autocomplete="off"
+5. bootstrap-modal: 弹出多个modal，导致之前的modal无法滚动：
+添加以下代码：
+$(document).on('hiden.bs.modal','.modal',function(){
+    $('.modal:visible').length && $(document.body).addClass('modal-open');
+})
